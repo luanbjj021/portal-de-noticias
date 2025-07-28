@@ -1,12 +1,37 @@
+section header{
+  border-top: 1px solid var(--stroke-color);
+  padding-block: 12px 24px ;
+  font:var(--text-span);
+  a {
+    justify-self:end;
+    align-items: center;
+    gap:8px;
+
+    span{
+      background-image:url(../assets/icons/Vector.svg);
+      height:16px;
+      width: 16px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &:hover span{
+    background-image: url(../assets/icons/ArrowRight-hover.svg);
+    
+    }
+  }
+}
+
+
+
 #featured{
   img{
     height: 100%;
     object-fit: cover;
     
   }
-}
-
-.card{
+ 
+  .card{
   position: relative;
   overflow: hidden;
   border-radius:4px;
@@ -39,3 +64,37 @@
     }
   }
 }
+  
+
+
+
+
+}
+
+
+ #wekly {
+   
+   & > div {
+    grid-template-columns: repeat(4,292px);
+   }
+   
+  img{
+    height: 160px;
+  }
+
+  figure{
+
+    position: relative;
+    .content-tag{
+      position: absolute;
+      top: 8px;
+      left:8px;
+    }
+
+    p{ margin-top:8px ;
+      font-weight: 800;
+
+    }
+  }
+ } 
+
